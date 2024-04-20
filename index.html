@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <table align="center" style="margin: 0 auto;margin-top: 200px;border-collapse: collapse;border-spacing: 0;width: 40%;">
+        <tr>
+            <td class="top-bottom-border" colspan="9"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#C2185B;border-top: 5px solid #000000; border-bottom: 5px solid #000000"  colspan=6 height="29" align="center" valign=middle><b><font size=4 color="#FFFFFF">Ingrese la contraseña:</font></b></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td style="background-color: #EF9A9A;" width=90% colspan=6 height="29" align="center" valign=middle>
+                <form id="loginForm" align="center">
+                    <div>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div>
+                        <button type="submit">Ingresar</button>
+                    </div>
+                </form>
+            </td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;border-bottom: 5px solid black;">
+            <td class="border" colspan="9"></td>
+        </tr>
+        
+       
+    </table>
+    
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var passwordInput = document.getElementById("password");
+            var password = passwordInput.value;
+            if (password === "kuznetsov+22") {
+                window.location.href = "https://liapunovbode.github.io/Javier";
+            } else {
+                alert("Contraseña incorrecta. Intente de nuevo otra vez.");
+                passwordInput.value = ""; // Limpiar el campo de contraseña
+            }
+        });
+    </script>
+    
+</body>
+</html>
