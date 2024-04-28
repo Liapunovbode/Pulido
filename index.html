@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agrega Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Agrega jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pompiere" />
+    <link href='https://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet'>
+    <!-- Agrega Google Fonts -->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montez|Pompiere);
+    </style>
+   
+
+    <title>Login</title>
+</head>
+<body>
+    <table align="center" style="margin: 0 auto;margin-top: 200px;border-collapse: collapse;border-spacing: 0;width: 40%;">
+        <tr>
+            <td class="top-bottom-border" colspan="9"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#C2185B;border-top: 5px solid #000000; border-bottom: 5px solid #000000;"  colspan=6 height="29" align="center" valign=middle><b><font size=7 color="#FFFFFF" style="font-family: 'Pompiere', sans-serif;">Bienvenido</font></b></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td style="background-color: #EF9A9A;" width=90% colspan=6 height="29" align="center" valign="middle">
+                <form id="loginForm" align="center">
+                    <div class="input-group" style="width: 49%;margin: 0 auto;">
+                        <!-- Agrega un icono de candado -->
+                        <span class="input-group-addon" style="background-color: #EF9A9A;border: 2px solid #c2185b;border-radius: 6px;box-shadow: 0 0 10px #c2185b;"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input style="margin-left:0px;" type="password" id="password" name="password" class="form-control" placeholder="Contraseña">
+                        <span class="input-group-addon" style="cursor:pointer;background-color: #EF9A9A;border: 2px solid #c2185b;border-radius: 6px;box-shadow: 0 0 10px #c2185b;" onclick="togglePassword()">
+                            <i id="eyeIcon" class="glyphicon glyphicon-eye-open"></i>
+                        </span>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+
+                    </div>
+                </form>
+            </td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;border-bottom: 5px solid black;">
+            <td class="border" colspan="9"></td>
+        </tr>
+    </table>
+
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            var eyeIcon = document.getElementById("eyeIcon");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                eyeIcon.classList.remove("glyphicon-eye-open");
+                eyeIcon.classList.add("glyphicon-eye-close");
+            } else {
+                passwordInput.type = "password";
+                eyeIcon.classList.remove("glyphicon-eye-close");
+                eyeIcon.classList.add("glyphicon-eye-open");
+            }
+        }
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var passwordInput = document.getElementById("password");
+            var password = passwordInput.value;
+            if (password === "kuznetsov+22") {
+                window.location.href = "https://liapunovbode.github.io/Javier";
+            } else {
+                alert("Contraseña incorrecta. Intente de nuevo otra vez.");
+                passwordInput.value = ""; // Limpiar el campo de contraseña
+            }
+        });
+    </script>
+    
+</body>
+</html>
