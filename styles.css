@@ -76,7 +76,7 @@ button:hover {
 
 .bubble-container {
     position: relative;
-    width: 1000px;
+    width: 100px;
     height: 200px;
 }
 
@@ -139,9 +139,5 @@ button:hover {
 .bubble:nth-child(5) {
     left: 100%;
     animation-delay: 2s;
-}
-.bubble:nth-child(6) {
-    left: 120%;
-    animation-delay: 2.5s;
 }
 
