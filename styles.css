@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #FFCC00;*/
+    margin: 0;
+    padding: 0;
+}
+body .logo .color{
+    background-color: #c2185b;
+    font-family: Montez;
+    font-weight: 600;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #000000;
+    font-size: 45px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 60px;
+    color: #000000;
+    padding: 18px;
+    
+
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+input[type="password"] {
+    /*width: 40%;*/
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #c2185b;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #c2185b;
+   /* margin-right: 15px;*/
+    color:blue;
+}
+
+button {
+    width: 49%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border:2px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000000;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.bubble-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.bubble {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #ffffff, #c2185b);
+    animation: bubbleAnimation 3s linear infinite;
+}
+
+.small-bubble {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #ffffff, #c2185b);
+    animation: bubbleAnimation 4s linear infinite;
+}
+
+@keyframes bubbleAnimation {
+    0% {
+        bottom: 0;
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        bottom: 300%; /* Ajusta la altura aquí */
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.small-bubble:nth-child(odd) {
+    width: 15px;
+    height: 15px;
+    animation-duration: 2s;
+}
+
+.bubble:nth-child(2) {
+    left: 25%;
+    animation-delay: 0.5s;
+}
+
+.bubble:nth-child(3) {
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(4) {
+    left: 75%;
+    animation-delay: 1.5s;
+}
+
+.bubble:nth-child(5) {
+    left: 100%;
+    animation-delay: 2s;
+}
+
