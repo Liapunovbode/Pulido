@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agrega Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Agrega jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pompiere" />
+    <link href='https://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet'>
+    <!-- Agrega Google Fonts -->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montez|Pompiere);
+    </style>
+   
+
+    <title>Login</title>
+</head>
+<body style="background-color:#EFDECD;">
+    <div align="center" class="logo">
+        <span class="color">JPG</span>
+        <p style="margin-top: 30px; font-family: Montez;font-size: 30px;">Iniciar sesión</p>
+    </div>
+    <table align="center" style="margin: 0 auto;margin-top: 40px;border-collapse: collapse;border-spacing: 0;width: 55%;">
+        <tr>
+            <td class="top-bottom-border" colspan="9"></td>
+        </tr>
+        <tr>
+            <td style="background-color:#C2185B;border-top: 5px solid #000000; border-bottom: 5px solid #000000;"  colspan=6 height="29" align="center" valign=middle><b><font size=6 color="#FFFFFF" style="font-family: Montez;font-weight: 400;">Bienvenido</font></b></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td style="background-color: #EF9A9A;" colspan=6 height="29" align="center" valign="middle">
+                <form id="loginForm" align="center">
+                    <div class="input-group" style="width: 90%;margin: 0 auto;">
+                        <!-- Agrega un icono de candado -->
+                        <span class="input-group-addon" style="background-color: #EF9A9A;border: 2px solid #c2185b;border-radius: 6px;box-shadow: 0 0 10px #c2185b;"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input style="margin-left:0px;" type="password" id="password" name="password" class="form-control" placeholder="Contraseña">
+                        <span class="input-group-addon" style="cursor:pointer;background-color: #EF9A9A;border: 2px solid #c2185b;border-radius: 6px;box-shadow: 0 0 10px #c2185b;" onclick="togglePassword()">
+                            <i id="eyeIcon" class="glyphicon glyphicon-eye-open"></i>
+                        </span>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+
+                    </div>
+                </form>
+            </td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;">
+            <td><br></td>
+        </tr>
+        <tr style="background-color:#EF9A9A;border-bottom: 5px solid black;">
+            <td class="border" colspan="9"></td>
+        </tr>
+    </table>
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <script src="scriptofumin.js"></script>
+    
+</body>
+</html>
